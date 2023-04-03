@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>Winx - FrontEnd Test</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="logoWrapper">
+          <img alt="logo" src="/assets/Logo.png" height="90" />
+        </div>
+        <div class="sidebarWrapper">
+          <nav class="sidebarItems">
+            <div class="topItems">
+              <a class="navbar-brand sidebarButton active" href="#">
+                <i class="bi bi-house-door sidebarIcon"></i>
+              </a>
+              <a class="navbar-brand sidebarButton" href="#">
+                <i class="bi bi-person sidebarIcon"></i>
+              </a>
+              <a class="navbar-brand sidebarButton" href="#">
+                <i class="bi bi-envelope-open sidebarIcon"></i>
+              </a>
+              <a class="navbar-brand sidebarButton" href="#">
+                <i class="bi bi-gear sidebarIcon"></i>
+              </a>
+              <a class="navbar-brand sidebarButton" href="#">
+                <i class="bi bi-pie-chart sidebarIcon"></i>
+              </a>
+            </div>
+            <div class="bottomItems">
+              <a class="navbar-brand sidebarButton" href="#">
+                <i class="bi bi-box-arrow-right sidebarIcon"></i>
+              </a>
+              <img
+                class="patternImage"
+                alt="pattern"
+                src="/assets/Pattern.png"
+                height="175"
+              />
+            </div>
+          </nav>
+          <div class="vertical-text">
+            <p><strong>HOME</strong></p>
+            <p>CULTURA</p>
+            <p>ENGAJAMENTO</p>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav flex-row">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Módulos</a>
+                </li>
+                <li class="nav-item">
+                  <button class="secondaryButton" type="button">
+                    Consultor Inside
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="primaryButton" type="button">
+                    Filtros Avançados
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Central de Ajuda</a>
+                </li>
+                <li class="nav-item">
+                  <img alt="avatar" src="/assets/Avatar.png" height="40" />
+                </li>
+                <li class="nav-item">
+                  <i class="bi bi-person"></i>
+                </li>
+                <li class="nav-item">
+                  <i class="bi bi-bell"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container dashboardWrapper">
+          <div class="welcomeWrapper">
+            <div class="cardWrapper welcomeCard">
+              <div>
+                <h1 class="headerOne">Olá, Lionel</h1>
+                <p>Azul Linhas Aereas</p>
+              </div>
+              <div>
+                <img
+                  alt="Lionel"
+                  src="/assets/Character.png"
+                  class="lionelImage"
+                />
+              </div>
+            </div>
+            <div class="col cardWrapper scoreCard">
+              <div>
+                <h4>Score Geral</h4>
+                <h1 class="headerOne">10 pontos</h1>
+              </div>
+              <div>
+                <i class="bi bi-three-dots"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row metricsWrapper">
+            <div class="col cardWrapper metrics">
+              <h4 class="headerOne">162.9k</h4>
+              <p class="infoText">Colaboradores Ativos</p>
+              <p class="descriptionText">10% Increase from Last Week</p>
+            </div>
+            <div class="col cardWrapper metrics">
+              <h4 class="headerOne">4.3k</h4>
+              <p class="infoText">Respondentes Ativos</p>
+              <p class="descriptionText">12% Increase from Last Week</p>
+            </div>
+            <div class="col cardWrapper metrics">
+              <h4 class="headerOne">2.1k</h4>
+              <p class="infoText">Novos Colaboradores</p>
+              <p class="descriptionText">3% Increase from Last Week</p>
+            </div>
+            <div class="col cardWrapper metrics">
+              <h4 class="headerOne">541</h4>
+              <p class="infoText">Respondendo</p>
+              <p class="descriptionText">16% Increase from Last Week</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col cardWrapper graphsWrapper">
+              <div class="firstCollumn">
+                <div class="collumnOne">
+                  <div>
+                    <h4 class="infoText">Visão Geral</h4>
+                    <div class="datepicker">
+                      <p class="descriptionText">Aug 25 - Sep 25</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="dotWithText">
+                      <i class="bi bi-dot"></i>
+                      <p class="descriptionText">Campaign</p>
+                    </div>
+                    <p class="numberDescription">80%</p>
+                    <div class="dotWithText">
+                      <i class="bi bi-dot"></i>
+                      <p class="descriptionText">Direct</p>
+                    </div>
+                    <p class="numberDescription">20%</p>
+                  </div>
+                </div>
+                <div>
+                  <canvas id="myCanvas" width="200" height="200"></canvas>
+                </div>
+              </div>
+              <div class="collumnTwo">
+                <div class="firstRow">
+                  <p class="numberHighlight">92</p>
+                  <p class="descriptionText">Ativos hoje</p>
+                </div>
+                <div class="lineGraphWrapper">
+                  <div>
+                    <canvas id="barGraph" width="65" height="50"></canvas>
+                    <p class="headerOne">15.980</p>
+                    <p class="descriptionText">Page Views</p>
+                  </div>
+                  <div>
+                    <canvas id="barGraphTwo" width="65" height="50"></canvas>
+                    <p class="headerOne">4.324</p>
+                    <p class="descriptionText">Contacted</p>
+                  </div>
+                </div>
+              </div>
+              <div class="collumnThree">
+                <canvas id="lineGraph" width="260" height="200"></canvas>
+                <div class="numbersWrapper">
+                  <div>
+                    <p>12</p>
+                    <p class="descriptionText">Advertisement</p>
+                  </div>
+                  <div>
+                    <p>4</p>
+                    <p class="descriptionText">Campaigns</p>
+                  </div>
+                  <div>
+                    <p>12.499</p>
+                    <p class="descriptionText">Emails Sent</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <p>Copyright 2023 Winx Inc. Todos os direitos reservados</p>
+      </div>
+      <div class="footerLinks">
+        <a>Configurações de segurança</a>
+        <a>Termos de uso</a>
+        <a>Políticas de privacidade</a>
+      </div>
+    </div>
+    <div class="circle-bg"></div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>

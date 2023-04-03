@@ -1,0 +1,519 @@
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+p {
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+}
+
+.circle-bg {
+  background-color: #ffd400;
+  position: fixed;
+  top: -15%;
+  left: -20%;
+  width: 60vw;
+  height: 130vh;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sidebar,
+.cardWrapper,
+.navbar-nav {
+  z-index: 1;
+}
+
+.sidebarItems,
+.topItems,
+.bottomItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar {
+  padding: 40px;
+  margin-left: 100px;
+  width: 15vw;
+}
+
+.dashboard {
+  width: 60vw;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.logoWrapper {
+  margin-bottom: 20px;
+}
+
+.sidebarWrapper {
+  display: flex;
+}
+
+.vertical-text {
+  display: flex;
+  margin-left: 20px;
+  gap: 30px;
+  font-size: 13px;
+  letter-spacing: 10px;
+  flex-direction: row-reverse;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-shadow: 2px 2px 20px rgb(184, 66, 7);
+}
+
+.sidebarItems {
+  background-color: #001943;
+  border-radius: 30px;
+  height: 70vh;
+  width: 100px;
+  padding-top: 50px;
+  justify-content: space-between;
+  box-shadow: 2px 2px 30px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebarIcon {
+  color: #e9f2f6;
+  font-size: 23px;
+}
+
+.patternImage {
+  padding-top: 40px;
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 80%;
+  background-color: #ffd400;
+  position: absolute;
+  margin-left: -40px;
+  top: 0;
+  left: 0;
+}
+
+.navbar-brand {
+  margin-right: 0 !important;
+}
+
+.topItems {
+  gap: 20px;
+}
+
+.cardWrapper {
+  background-color: #f5f5f7;
+  border-radius: 10px;
+  padding: 30px 20px !important;
+  margin: 35px 20px;
+  align-items: center;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.metrics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 20px !important;
+}
+
+#myCanvas {
+  background-color: #e9f2f6;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-left: -18px;
+  margin-right: 20px;
+}
+
+.headerOne {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #414d6b !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-nav > .bi {
+  font-size: 20px;
+}
+
+.secondaryButton {
+  border: none;
+  background-color: #f5f5f7;
+  font-weight: 600;
+  font-size: 14px;
+  color: #414d6b;
+  padding: 10px 32px;
+  border-radius: 10px;
+}
+
+.primaryButton {
+  border: none;
+  background-color: #001943;
+  font-weight: 500;
+  font-size: 14px;
+  color: #e9f2f6;
+  padding: 10px 32px;
+  border-radius: 10px;
+}
+
+.dashboardWrapper {
+  margin-top: 60px;
+}
+
+.scoreCard {
+  display: flex;
+  height: 130px;
+  justify-content: space-between;
+}
+
+.scoreCard h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.bi-three-dots {
+  font-size: 60px !important;
+}
+.welcomeWrapper {
+  display: flex;
+}
+
+.welcomeCard {
+  display: flex;
+  position: relative;
+  height: 130px;
+  width: 60%;
+}
+
+.lionelImage {
+  width: 140px;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.infoText {
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 10px !important;
+}
+
+.descriptionText {
+  font-size: 10px;
+  font-weight: 500;
+  color: #bfc0cd;
+}
+
+.graphsWrapper,
+.numbersWrapper,
+.lineGraphWrapper {
+  display: flex;
+}
+
+.graphsWrapper {
+  box-shadow: 5px 5px 20px 1px rgba(62, 67, 106, 0.2);
+}
+
+.lineGraphWrapper {
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.collumnOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.collumnOne .infoText {
+  font-weight: 500;
+}
+
+.dotWithText {
+  display: flex;
+  align-items: center;
+}
+
+.dotWithText i {
+  font-size: 50px;
+  margin: -15px;
+}
+
+.numberDescription {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  color: #001943;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 30px;
+  text-decoration: underline;
+}
+
+.datepicker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+  color: #bfc0cd;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.datepicker i {
+  font-size: 12px;
+}
+
+.collumnTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.numberHighlight {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.numbersWrapper {
+  justify-content: space-between;
+}
+
+#lineGraph {
+  margin-bottom: -80px;
+}
+
+.firstCollumn {
+  display: flex;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+
+  .lionelImage {
+    right: 20px;
+  }
+
+  .dashboard {
+    width: 100vw;
+  }
+
+  .logoWrapper img {
+    height: 50px;
+  }
+  .circle-bg {
+    top: -5%;
+    width: 80vw;
+  }
+
+  .metricsWrapper {
+    flex-direction: column;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+  }
+
+  .dashboardWrapper {
+    padding: 0px !important;
+  }
+
+  .metrics {
+    margin: 5px 5px !important;
+  }
+
+  .bi-three-dots {
+    font-size: 30px !important;
+  }
+
+  .welcomeWrapper {
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .welcomeCard,
+  .scoreCard {
+    width: 100% !important;
+    margin: 5px !important;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .secondaryButton {
+    padding: 8px 8px;
+    font-size: 12px;
+  }
+
+  .primaryButton {
+    padding: 8px 8px;
+    font-size: 12px;
+  }
+
+  #lineGraph {
+    height: 220px;
+  }
+
+  .graphsWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 10px 10px 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footerLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sidebar {
+    margin-left: 10px;
+    padding: 30px 10px;
+  }
+
+  .metricsWrapper {
+    flex-direction: column;
+  }
+
+  .metrics {
+    margin: 15px 10px;
+  }
+
+  .bi-three-dots {
+    font-size: 30px !important;
+  }
+
+  .welcomeWrapper {
+    flex-direction: column;
+  }
+
+  .welcomeCard,
+  .scoreCard {
+    width: 100%;
+    margin: 15px 10px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+  .secondaryButton {
+    padding: 8px 8px;
+    font-size: 12px;
+  }
+  .primaryButton {
+    padding: 8px 8px;
+    font-size: 12px;
+  }
+
+  .dashboard {
+    width: 75vw;
+  }
+  #lineGraph {
+    height: 150px;
+  }
+  .graphsWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .circle-bg {
+    top: -5%;
+    width: 70vw;
+  }
+
+  .sidebar {
+    margin-left: 40px;
+    padding: 40px 20px;
+  }
+
+  .dashboard {
+    width: 75vw;
+  }
+
+  .cardWrapper {
+    margin: 20px 10px;
+  }
+
+  #myCanvas {
+    height: 150px;
+  }
+
+  .bi-three-dots {
+    font-size: 40px !important;
+  }
+
+  #lineGraph {
+    height: 180px;
+  }
+  .numberHighlight {
+    font-size: 40px;
+  }
+
+  .lionelImage {
+    right: 30px;
+  }
+  .metrics {
+    padding: 25px 10px !important;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+  .secondaryButton {
+    padding: 8px 8px;
+    font-size: 12px;
+  }
+  .primaryButton {
+    padding: 8px 8px;
+    font-size: 12px;
+  }
+
+  .metricsWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
