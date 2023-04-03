@@ -9,13 +9,13 @@ Para executar o projeto, siga os seguintes passos:
 1. Clone o repositório em sua máquina local usando o seguinte comando no terminal:
 
 ```
-git clone https://github.com/nome-de-usuario/nome-do-repositorio.git
+git clone https://github.com/nome-de-usuario/Winx-DesafioTecnico.git
 ```
 
 2. Após clonar o repositório, navegue até a pasta do projeto usando o seguinte comando:
 
 ```
-cd nome-do-repositorio
+cd Winx-DesafioTecnico
 ```
 
 3. Abra o arquivo index.html no seu navegador de preferência.
